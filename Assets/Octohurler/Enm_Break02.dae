@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 68</authoring_tool>
+    </contributor>
+    <created>2019-05-27T18:19:28</created>
+    <modified>2019-05-27T18:19:28</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="M_Chair">
+      <profile_COMMON>
+        <newparam sid="M_Chair_Alb_png-surface">
+          <surface type="2D">
+            <init_from>M_Chair_Alb_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="M_Chair_Alb_png-sampler">
+          <sampler2D>
+            <source>M_Chair_Alb_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="M_Chair_Rgh_png-surface">
+          <surface type="2D">
+            <init_from>M_Chair_Rgh_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="M_Chair_Rgh_png-sampler">
+          <sampler2D>
+            <source>M_Chair_Rgh_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="M_Chair_Nrm_png-surface">
+          <surface type="2D">
+            <init_from>M_Chair_Nrm_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="M_Chair_Nrm_png-sampler">
+          <sampler2D>
+            <source>M_Chair_Nrm_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="M_Chair_Alb_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="M_Chair_Alb_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <gloss>
+                <texture texture="M_Chair_Rgh_png-sampler" texcoord="CHANNEL1"/>
+              </gloss>
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="M_Chair_Nrm_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="M_Chair-material" name="M_Chair">
+      <instance_effect url="#M_Chair"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-body__M_Chair" name="body__M_Chair">
+      <mesh>
+        <source id="geom-body__M_Chair-positions">
+          <float_array id="geom-body__M_Chair-positions-array" count="297">-2.594824 0.01414724 0.2914998 -2.574107 -0.4352008 0.03266354 2.154637 0.09231137 0.5359247 2.175353 -0.3570358 0.2770884 -2.574107 -0.4352008 0.03266354 -2.54979 -0.3272344 -0.4743785 2.175353 -0.3570358 0.2770884 2.199671 -0.2490693 -0.2299536 -2.54979 -0.3272344 -0.4743785 -2.555478 0.1888395 -0.528911 2.199671 -0.2490693 -0.2299536 2.193983 0.2670064 -0.2844862 -2.555478 0.1888395 -0.528911 -2.583309 0.3998266 -0.0555724 2.193983 0.2670064 -0.2844862 2.166151 0.4779907 0.1888525 -2.583309 0.3998266 -0.0555724 -2.594824 0.01414724 0.2914998 2.166151 0.4779907 0.1888525 2.154637 0.09231137 0.5359247 2.175353 -0.3570358 0.2770884 2.192289 -0.3972398 0.3012654 2.154637 0.09231137 0.5359247 2.169667 0.1020627 0.582392 2.154637 0.09231137 0.5359247 2.166151 0.4779907 0.1888525 2.182619 0.5245195 0.1946737 2.193983 0.2670064 -0.2844862 2.213252 0.2861271 -0.3261332 2.199671 -0.2490693 -0.2299536 2.219222 -0.2835508 -0.2601374 2.175353 -0.3570358 0.2770884 -2.574107 -0.4352008 0.03266354 -2.594824 0.01414724 0.2914998 -2.571502 -0.03192524 -0.1469396 -2.54979 -0.3272344 -0.4743785 -2.583309 0.3998266 -0.0555724 -2.555478 0.1888395 -0.528911 2.169667 0.1020627 0.582392 2.610208 0.109137 0.5941827 2.182619 0.5245195 0.1946737 2.632261 -0.3796312 0.3204972 2.192289 -0.3972398 0.3012654 2.622925 0.5215407 0.2140538 2.213252 0.2861271 -0.3261332 2.644917 0.03561065 0.1190593 2.65861 -0.2700921 -0.2286742 2.219222 -0.2835508 -0.2601374 2.652865 0.2869568 -0.2949366 -2.584712 0.3030007 0.1073789 2.187171 -0.371211 0.286882 2.165811 0.09670557 0.5529854 -2.543433 -0.153058 -0.5488924 2.206718 0.273317 -0.2996914 2.212451 -0.2621007 -0.2400581 -2.584712 0.3030007 0.1073789 2.165811 0.09670557 0.5529854 2.17789 0.4950993 0.1904885 -2.584712 0.3030007 0.1073789 -2.543433 -0.153058 -0.5488924 2.187171 -0.371211 0.286882 2.212451 -0.2621007 -0.2400581 -2.543433 -0.153058 -0.5488924 -2.584712 0.3030007 0.1073789 2.206718 0.273317 -0.2996914 2.17789 0.4950993 0.1904885 2.165811 0.09670557 0.5529854 2.610208 0.1091371 0.5941827 2.17789 0.4950993 0.1904885 2.622925 0.5215407 0.2140538 2.206718 0.273317 -0.2996914 2.633324 -0.3730044 0.3177497 2.187171 -0.371211 0.286882 2.652865 0.2869568 -0.2949366 2.212451 -0.2621007 -0.2400581 2.65861 -0.2700921 -0.2286743 -2.584712 0.3030007 0.1073789 2.187171 -0.371211 0.286882 2.165811 0.09670557 0.5529854 -2.543433 -0.153058 -0.5488924 2.206718 0.273317 -0.2996914 2.212451 -0.2621007 -0.2400581 -2.584712 0.3030007 0.1073789 2.165811 0.09670557 0.5529854 2.17789 0.4950993 0.1904885 -2.584712 0.3030007 0.1073789 -2.543433 -0.153058 -0.5488924 2.187171 -0.371211 0.286882 2.212451 -0.2621007 -0.2400581 -2.543433 -0.153058 -0.5488924 -2.584712 0.3030007 0.1073789 2.206718 0.273317 -0.2996914 2.17789 0.4950993 0.1904885 2.165811 0.09670557 0.5529854 2.641907 0.4246393 -0.1431818 2.17789 0.4950993 0.1904885 2.187171 -0.371211 0.286882 2.206718 0.273317 -0.2996914 2.212451 -0.2621007 -0.2400581</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-positions-array" count="99" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-normals">
+          <float_array id="geom-body__M_Chair-normals-array" count="147">-0.08018001 0.103635 0.9913783 -0.03325929 -0.9137096 0.4050045 -0.05288138 0.1038249 0.9931889 -0.005865089 -0.9134727 0.4068578 -0.03325929 -0.9137096 0.4050045 0.02150539 -0.66881 -0.7431222 -0.005865089 -0.9134727 0.4068578 0.04892347 -0.6691363 -0.7415276 0.02150539 -0.66881 -0.7431222 0.007820143 0.4988605 -0.8666471 0.04892347 -0.6691363 -0.7415276 0.0371695 0.5008436 -0.8647394 0.007820142 0.4988604 -0.866647 -0.05483624 0.9770983 0.2056016 0.0371695 0.5008436 -0.8647394 -0.02737046 0.9778919 0.2073124 -0.05483624 0.9770983 0.2056016 -0.08018001 0.103635 0.9913783 -0.02737046 0.9778919 0.2073124 -0.05288137 0.1038248 0.9931887 -0.9361817 -0.3407893 0.08617707 -0.9377215 -0.3269276 0.1174596 -0.9528353 0.01173908 0.303261 -0.9530592 0.04501142 0.2994195 -0.9528353 0.01173908 0.303261 -0.9436994 0.3289221 0.03524091 -0.9422265 0.3349708 0.001959495 -0.9217708 0.1702631 -0.3483522 -0.9201358 0.1389991 -0.3661005 -0.9175696 -0.2425947 -0.3149824 -0.9176571 -0.2700173 -0.2915407 -0.9361817 -0.3407893 0.08617707 -0.03325929 -0.9137096 0.4050045 -0.08018001 0.103635 0.9913783 -0.9985806 -0.01566392 -0.05090773 0.02150539 -0.66881 -0.7431222 -0.05483624 0.9770983 0.2056016 0.007820143 0.4988605 -0.8666471 -0.02937311 0.1155404 0.9928684 0.2739188 0.1154377 0.9547998 -0.001955034 0.9802766 0.1976209 0.3072985 -0.8573198 0.4130017 0.01761915 -0.9086766 0.4171286 0.3073699 0.9299777 0.2016564 0.06067747 0.4912163 -0.8689216 0.9985806 0.01566392 0.05090773 0.3604873 -0.6386728 -0.6798132 0.0724315 -0.6752784 -0.7339978 0.360347 0.4680709 -0.8068827</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-normals-array" count="49" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-map-2">
+          <float_array id="geom-body__M_Chair-map-2-array" count="297">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-map-2-array" count="99" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-map0">
+          <float_array id="geom-body__M_Chair-map0-array" count="297">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-map0-array" count="99" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-map1">
+          <float_array id="geom-body__M_Chair-map1-array" count="297">0.1950256 0.7975891 0 0.1623102 0.7885252 0 0.1970245 0.4842451 0 0.1643091 0.4767834 0 0.04730297 0.4744335 0 0.0856794 0.4834974 0 0.04530404 0.7893797 0 0.08368047 0.7968414 0 0.08630503 0.4834974 0 0.1246815 0.4837415 0 0.0843061 0.7968414 0 0.1226825 0.7970855 0 0.1253071 0.4837415 0 0.1636835 0.4839857 0 0.1233082 0.7970855 0 0.1616846 0.7973297 0 0.04467842 0.796582 0 0.006301976 0.7963378 0 0.04667735 0.483238 0 0.008300908 0.4829938 0 0.07775997 0.4595865 0 0.07815671 0.4653696 0 0.1439383 0.4205539 0 0.1427176 0.4196689 0 0.1439383 0.4205539 0 0.1194018 0.3448234 0 0.1181506 0.3457847 0 0.04104677 0.3446403 0 0.04156557 0.3461967 0 0.01544213 0.4177157 0 0.01704433 0.4176394 0 0.07775997 0.4595865 0 0.114229 0.2321507 0 0.1318532 0.3009384 0 0.08177309 0.2830853 0 0.05174334 0.2392004 0 0.08026245 0.3362325 0 0.03076219 0.298085 0 0.1427176 0.4196689 0 0.1154955 0.4160373 0 0.1181506 0.3457847 0 0.07357901 0.4378424 0 0.07815671 0.4653696 0 0.104509 0.3711452 0 0.04156557 0.3461967 0 0.08085756 0.4028229 0 0.04356451 0.4052339 0 0.01704433 0.4176394 0 0.06205844 0.3671321 0 0.1950256 0.7975891 0 0.1643091 0.4767834 0 0.1970245 0.4842451 0 0.0856794 0.4834974 0 0.1226825 0.7970855 0 0.08368047 0.7968414 0 0.04467842 0.796582 0 0.008300908 0.4829938 0 0.04667735 0.483238 0 0.04730297 0.4744335 0 0.0856794 0.4834974 0 0.04530404 0.7893797 0 0.08368047 0.7968414 0 0.0856794 0.4834974 0 0.1636835 0.4839857 0 0.1226825 0.7970855 0 0.1616846 0.7973297 0 0.1439383 0.4205539 0 0.1154955 0.4160373 0 0.1194018 0.3448234 0 0.104509 0.3711452 0 0.04104677 0.3446403 0 0.07357901 0.4378424 0 0.07775997 0.4595865 0 0.06205844 0.3671321 0 0.01544213 0.4177157 0 0.04356451 0.4052339 0 0.1950256 0.7975891 0 0.1643091 0.4767834 0 0.1970245 0.4842451 0 0.0856794 0.4834974 0 0.1226825 0.7970855 0 0.08368047 0.7968414 0 0.04467842 0.796582 0 0.008300908 0.4829938 0 0.04667735 0.483238 0 0.04730297 0.4744335 0 0.0856794 0.4834974 0 0.04530404 0.7893797 0 0.08368047 0.7968414 0 0.0856794 0.4834974 0 0.1636835 0.4839857 0 0.1226825 0.7970855 0 0.1616846 0.7973297 0 0.1439383 0.4205539 0 0.06205844 0.3671321 0 0.1194018 0.3448234 0 0.07775997 0.4595865 0 0.04104677 0.3446403 0 0.01544213 0.4177157 0</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-map1-array" count="99" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-body__M_Chair-vertices">
+          <input semantic="POSITION" source="#geom-body__M_Chair-positions"/>
+        </vertices>
+        <triangles material="M_Chair" count="40">
+          <input semantic="VERTEX" source="#geom-body__M_Chair-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-body__M_Chair-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-body__M_Chair-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-body__M_Chair-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2 4 4 4 4 5 5 5 5 6 6 6 6 5 5 5 5 7 7 7 7 6 6 6 6 8 8 8 8 9 9 9 9 10 10 10 10 9 9 9 9 11 11 11 11 10 10 10 10 12 12 12 12 13 13 13 13 14 14 14 14 13 13 13 13 15 15 15 15 14 14 14 14 16 16 16 16 17 17 17 17 18 18 18 18 17 17 17 17 19 19 19 19 18 18 18 18 20 20 20 20 21 21 21 21 22 22 22 22 21 21 21 21 23 23 23 23 22 22 22 22 24 24 24 24 23 23 23 23 25 25 25 25 23 23 23 23 26 26 26 26 25 25 25 25 25 25 25 25 26 26 26 26 27 27 27 27 26 26 26 26 28 28 28 28 27 27 27 27 27 27 27 27 28 28 28 28 29 29 29 29 28 28 28 28 30 30 30 30 29 29 29 29 30 30 30 30 21 21 21 21 31 31 31 31 29 29 29 29 30 30 30 30 31 31 31 31 32 32 32 32 33 33 33 33 34 34 34 34 35 35 35 35 32 32 32 32 34 34 34 34 33 33 33 33 36 36 36 36 34 34 34 34 37 37 37 37 35 35 35 35 34 34 34 34 36 36 36 36 37 37 37 37 34 34 34 34 38 38 38 38 39 39 39 39 40 40 40 40 41 41 41 41 39 39 39 39 38 38 38 38 42 42 42 42 41 41 41 41 38 38 38 38 39 39 39 39 43 43 43 43 40 40 40 40 40 40 40 40 43 43 43 43 44 44 44 44 39 39 39 39 41 41 41 41 45 45 45 45 43 43 43 43 39 39 39 39 45 45 45 45 46 46 46 46 41 41 41 41 42 42 42 42 41 41 41 41 46 46 46 46 45 45 45 45 47 47 47 47 46 46 46 46 42 42 42 42 48 48 48 48 43 43 43 43 45 45 45 45 46 46 46 46 48 48 48 48 45 45 45 45 43 43 43 43 48 48 48 48 44 44 44 44 48 48 48 48 46 46 46 46 47 47 47 47 44 44 44 44 48 48 48 48 47 47 47 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="geom-body__M_Chair-skin1">
+      <skin source="#geom-body__M_Chair">
+        <bind_shape_matrix>0.9987725 0.01232824 0.04796972 -0.005815537 0.006520743 0.9273651 -0.3741011 0.1399575 -0.04909744 0.3739547 0.9261465 0.1549865 0 0 0 1</bind_shape_matrix>
+        <source id="geom-body__M_Chair-skin1-joints">
+          <Name_array id="geom-body__M_Chair-skin1-joints-array" count="1">joint0</Name_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-skin1-bind_poses">
+          <float_array id="geom-body__M_Chair-skin1-bind_poses-array" count="16">0.9987728 0.006520745 -0.04909744 0.01250521 0.01232824 0.9273649 0.3739547 -0.1876779 0.04796972 -0.374101 0.9261465 -0.09090301 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-body__M_Chair-skin1-weights">
+          <float_array id="geom-body__M_Chair-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-body__M_Chair-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-body__M_Chair-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-body__M_Chair-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="99">
+          <input semantic="JOINT" source="#geom-body__M_Chair-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-body__M_Chair-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="M_Chair_Alb_png">
+      <init_from>./images/M_Chair_Alb.png</init_from>
+    </image>
+    <image id="M_Chair_Nrm_png">
+      <init_from>./images/M_Chair_Nrm.png</init_from>
+    </image>
+    <image id="M_Chair_Rgh_png">
+      <init_from>./images/M_Chair_Rgh.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-body" name="body" sid="joint0" type="JOINT">
+        <translate>-0.005815537 0.1399575 0.1549865</translate>
+        <rotate>-0.9916567 -0.1286767 0.00769868 -22.15879</rotate>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-body__M_Chair" name="body__M_Chair">
+        <instance_controller url="#geom-body__M_Chair-skin1">
+          <skeleton>#node-body</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="M_Chair" target="#M_Chair-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
