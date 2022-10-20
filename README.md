@@ -9,6 +9,11 @@ My project was strongly inspired by 2 visual aesthetics that I am drawn to in ga
 You can check out my references here:
 
 ![Reference 1](References/ref.jpg?raw=true)
+![Reference 2](References/ref2.jpg?raw=true)
+![Reference 3](References/ref3.jpg?raw=true)
+![Reference 4](References/ref4.jpg?raw=true)
+![Reference 5](References/ref5.jpg?raw=true)
+![Reference 6](References/ref6.jpg?raw=true)
 
 ## Objects 
 
