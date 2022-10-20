@@ -8,7 +8,7 @@ My project was strongly inspired by 2 visual aesthetics that I am drawn to in ga
 
 ## Objects 
 
-# Found Assets (2 pts each)
+### Found Assets (2 pts each)
 
 Destroyed City (3 Assets)
 https://assetstore.unity.com/packages/3d/environments/sci-fi/destroyed-city-free-6459
@@ -38,7 +38,7 @@ Low Poly Road Pack
 https://assetstore.unity.com/packages/3d/environments/roadways/low-poly-road-pack-67288
 
 
-# Created Assets (3 pts)
+### Created Assets (3 pts)
 
 Terrain Sculpt
 
