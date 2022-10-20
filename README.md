@@ -6,15 +6,6 @@ My scene is a sunken city with surreal elements. I wanted to highlight the possi
 
 My project was strongly inspired by 2 visual aesthetics that I am drawn to in games. The first is the undersea landscape. My references for this section were Infinite Azure from Tekken 7, the underwater stage from Super Monkey Ball 2, and Sekiro's Fountainhead Palace. The second aspect I wanted to highlight was surrealist and weird use of simple objects. My inspirations for this were Katamari Damacy, Splatoon's story mode, and plenty of early 2000s GameCube/PS2 era games that used simple, low-poly objects in scarce amounts to create surreal scenes.
 
-You can check out my references here:
-
-![Reference 1](References/ref.jpg?raw=true)
-![Reference 2](References/ref2.jpg?raw=true)
-![Reference 3](References/ref3.jpg?raw=true)
-![Reference 4](References/ref4.jpg?raw=true)
-![Reference 5](References/ref5.png?raw=true)
-![Reference 6](References/ref6.jpg?raw=true)
-
 ## Objects 
 
 ### Found Assets (2 pts each)
@@ -64,4 +55,15 @@ https://assetstore.unity.com/packages/2d/textures-materials/sky/free-stylized-sk
 
 Stylize Water Texture
 https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-water-texture-153577
+
+## References
+
+You can check out my references here:
+
+![Reference 1](References/ref.jpg?raw=true)
+![Reference 2](References/ref2.jpg?raw=true)
+![Reference 3](References/ref3.jpg?raw=true)
+![Reference 4](References/ref4.jpg?raw=true)
+![Reference 5](References/ref5.png?raw=true)
+![Reference 6](References/ref6.jpg?raw=true)
 
