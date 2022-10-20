@@ -8,7 +8,7 @@ My project was strongly inspired by 2 visual aesthetics that I am drawn to in ga
 
 You can check out my references here:
 
-[Reference 1](References/ref.jpg?raw=true)
+![Reference 1](References/ref.jpg?raw=true)
 
 ## Objects 
 
