@@ -6,6 +6,10 @@ My scene is a sunken city with surreal elements. I wanted to highlight the possi
 
 My project was strongly inspired by 2 visual aesthetics that I am drawn to in games. The first is the undersea landscape. My references for this section were Infinite Azure from Tekken 7, the underwater stage from Super Monkey Ball 2, and Sekiro's Fountainhead Palace. The second aspect I wanted to highlight was surrealist and weird use of simple objects. My inspirations for this were Katamari Damacy, Splatoon's story mode, and plenty of early 2000s GameCube/PS2 era games that used simple, low-poly objects in scarce amounts to create surreal scenes.
 
+You can check out my references here:
+
+[Reference 1](References/ref.jpg?raw=true "Reference 1")
+
 ## Objects 
 
 ### Found Assets (2 pts each)
