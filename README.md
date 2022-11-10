@@ -37,6 +37,9 @@ https://www.models-resource.com/nintendo_64/supermario64/model/18362/
 Low Poly Road Pack 
 https://assetstore.unity.com/packages/3d/environments/roadways/low-poly-road-pack-67288
 
+The Roost
+https://www.models-resource.com/3ds/animalcrossingnewleaf/model/10416/
+
 
 ### Created Assets (3 pts)
 
