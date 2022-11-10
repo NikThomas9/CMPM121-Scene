@@ -59,9 +59,13 @@ https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-water-
 ## Particle Systems and Lighting
 
 Spot Lights - Street Lights
+
 Area Light - Shrine Lighting
+
 Point Light - Big Moai Eyes
+
 Directional Lights - Static Pink Hue, Daytime/Nighttime Light
+
 
 Particle Systems - Rain System, Small Moai Red Glow, Big Moai Galaxy Effect
 
